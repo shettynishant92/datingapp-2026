@@ -482,3 +482,6 @@ $RECYCLE.BIN/
 *.swp
 API/appsettings.json
 API/dating.db*
+API/Data/Migrations/20260701182128_UserEntityUpdated.cs
+API/Data/Migrations/20260701182128_UserEntityUpdated.Designer.cs
+API/Data/Migrations/AppDbContextModelSnapshot.cs
