@@ -1,9 +1,7 @@
-using API.Data;
 using API.Entities;
 using API.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
@@ -13,7 +11,7 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<Member>>> GetMembers()
         {
-            return Ok(memberRepository.GetMembersAsync());
+            return Ok(await memberRepository.GetMembersAsync());
         }
 
         [HttpGet("{id}")]
